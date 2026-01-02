@@ -1,39 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!--
-        My device: Xiaomi Mi A1
-        My android version: 9
-
-        Use the Landscape mode
-        In Landscape mode, the values X and Y are inverted
-
-        Portrait:
-        Device Width: X => 1080
-        Device Height: Y => 1920
-
-        Landscape:
-        Device Width: X => 1920
-        Device Height: Y => 1080
-
-        Find the dimensions of your device in MainActivity ( DEBUG )
-
-        Add the android:background="@color/colorAlphaWhite" in layout ( RelativeLayout ) to help the adjusts
+        گوشی: Xiaomi Redmi Note 13
+        رزولوشن: 1080 × 2400 (Portrait) → Landscape: 2400 × 1080
+        نسبت: 20:9 (کشیده‌تر از 16:9 قدیمی)
+        حتماً Landscape mode استفاده کن و background سفید شفاف بذار برای تست
     -->
 
-    <!-- Board -->
-    <dimen name="boardWidth" tools:ignore="PxUsage">1620px</dimen>
-    <dimen name="boardHeight" tools:ignore="PxUsage">897px</dimen>
+    <!-- Board (میز بازی) -->
+    <dimen name="boardWidth" tools:ignore="PxUsage">2025px</dimen>     <!-- ≈1620 × 1.25 -->
+    <dimen name="boardHeight" tools:ignore="PxUsage">897px</dimen>     <!-- تقریباً ثابت نگه داشتم، کمی تنظیم میشه -->
     <dimen name="boardMarginBottom" tools:ignore="PxUsage">0.0099px</dimen>
 
-    <!-- Canvas -->
-    <dimen name="canvasWidth" tools:ignore="PxUsage">1458px</dimen>
-    <dimen name="canvasHeight" tools:ignore="PxUsage">731px</dimen>
-    <dimen name="canvasMarginTop" tools:ignore="PxUsage">82px</dimen>
+    <!-- Canvas (ناحیه رسم guideline) -->
+    <dimen name="canvasWidth" tools:ignore="PxUsage">1822px</dimen>    <!-- ≈1458 × 1.25 -->
+    <dimen name="canvasHeight" tools:ignore="PxUsage">731px</dimen>    <!-- تقریباً ثابت -->
+    <dimen name="canvasMarginTop" tools:ignore="PxUsage">102px</dimen> <!-- ≈82 × 1.25 -->
 
-    <!-- Buttons -->
-    <dimen name="buttonWidth" tools:ignore="PxUsage">280px</dimen>
-    <dimen name="buttonHeight" tools:ignore="PxUsage">75px</dimen>
-    <dimen name="buttonNormalMarginStart" tools:ignore="PxUsage">175px</dimen>
-    <dimen name="buttonCloseMarginEnd" tools:ignore="PxUsage">170px</dimen>
-    <dimen name="buttonTrickshotSecondLineMarginEnd" tools:ignore="PxUsage">170px</dimen>
+    <!-- Buttons (دکمه‌ها) -->
+    <dimen name="buttonWidth" tools:ignore="PxUsage">350px</dimen>     <!-- بزرگ‌تر برای صفحه کشیده -->
+    <dimen name="buttonHeight" tools:ignore="PxUsage">94px</dimen>     <!-- ≈75 × 1.25 -->
+    <dimen name="buttonNormalMarginStart" tools:ignore="PxUsage">219px</dimen>  <!-- ≈175 × 1.25 -->
+    <dimen name="buttonCloseMarginEnd" tools:ignore="PxUsage">213px</dimen>    <!-- ≈170 × 1.25 -->
+    <dimen name="buttonTrickshotSecondLineMarginEnd" tools:ignore="PxUsage">213px</dimen>
 </resources>
